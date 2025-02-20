@@ -1,19 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Header } from "./layouts/Header/Header"
+// import { Navbar } from "./layouts/Navbar/Navbar"
+export const App = () =>{
+  return(
 
-function App() {
-  const [count, setCount] = useState(0)
+    <>
 
-  return (
-    <div>
-
-      <h1>Primer Uso de react</h1>
-      <p>prueba de renderizado de varias etiquetas
-      </p>
-    </div>
+    <Header />
+    
+    <main></main>
+    <footer></footer>
+    
+    </>
   )
-}
 
-export default App
+}
