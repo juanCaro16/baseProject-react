@@ -1,3 +1,4 @@
+import { ItemNavbar } from "../../components/ItemNavbar/ItemNavbar"
 export const Navbar = () => {
 
     const styles = {
@@ -10,15 +11,18 @@ export const Navbar = () => {
     return (
         <nav className="">
             <ul className={ul}>
-                <li>
-                    <a className={li} href="">Clase 1</a>
-                </li>
-                <li>
-                    <a className={li} href="">Clase 2</a>
-                </li>
-                <li>
-                    <a className={li} href="">Clase 3</a>
-                </li>
+             <ItemNavbar 
+             content="Home"
+             myStyles={li}
+             />
+             <ItemNavbar 
+             content="Class 1"
+             myStyles={li}
+             />
+             <ItemNavbar 
+             content="Class 2"
+             myStyles={li}
+             />
             </ul>
         </nav>
     )
